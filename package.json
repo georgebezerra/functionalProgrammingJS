@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/georgebezerra/functionalProgrammingJS/issues"
   },
-  "homepage": "https://github.com/georgebezerra/functionalProgrammingJS#readme"
+  "homepage": "https://github.com/georgebezerra/functionalProgrammingJS#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
