@@ -19,7 +19,7 @@ function somar(a, b) {
   return a + b
 }
 
-console.log('\Com número exato de parâmetros:')
+console.log('\nCom número exato de parâmetros:')
 let resultado = somar(3,4)
 console.log(resultado)
 
