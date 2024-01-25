@@ -1,4 +1,4 @@
-console.log('Arrow Function');
+console.log('****ARROW FUNCTION****\n');
 console.log(
   '1-Arrow function é uma função anônima que quando NÃO SE TEM {} não tem return explicito',
 );
@@ -39,16 +39,25 @@ console.log(adicao(1, 2, 3, 4, 5, 6));
 console.log(adicao(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 
 console.log('\n5 - Uma função dentro de outra função usando arrow function');
-console.log('Sem arrow function - função comum');
-const potencia = base => {
+console.log('5.1 - Função comum');
+function potencia(base) {
+  return function (exp) {
+    return Math.pow(base, exp);
+  };
+}
+const bits4 = potencia(2)(4);
+console.log(bits4);
+
+console.log('\n5.2 - Com arrow function');
+const potencia00 = base => {
   return function (exp) {
     return Math.pow(base, exp);
   };
 };
-const bits8 = potencia(2)(8);
+const bits8 = potencia00(2)(8);
 console.log(bits8);
 
-console.log('\narrow function dentro de um arrow function');
+console.log('\n5.3 - Arrow function dentro de um arrow function');
 const potencia01 = base => {
   return exp => {
     return Math.pow(base, exp);
@@ -63,11 +72,12 @@ const potencia03 = base => exp => {
 const bits16 = potencia03(2)(16);
 console.log(bits16);
 
+console.log('\n5.4 - RESUMINDO - arrow function dentro de um arrow function');
 const potencia04 = base => exp => Math.pow(base, exp);
 const bits24 = potencia04(2)(24);
 console.log(bits24);
 
-console.log('\nRESUMINDO - arrow function dentro de um arrow function');
+console.log('\n5.5 - RESUMINDO - arrow function');
 const subtrair = (a, b) => a - b;
 console.log(subtrair(4, 1));
 
