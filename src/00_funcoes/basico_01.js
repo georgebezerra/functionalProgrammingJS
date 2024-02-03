@@ -1,15 +1,18 @@
-console.log('Declarando uma variável');
+console.log('Function declaration x Funcion expression');
+
 let a = 4;
 console.log(a);
 
-console.log('\nFunction declaration:');
+console.log(
+  '\nFunction declaration: função nomeada, é uma função básica, comum',
+);
 function bomDia() {
   console.log('Bom dia!');
 }
 bomDia();
 
 console.log(
-  '\nFunction expression - tratar e armazenar a função dentro de uma variável, via de regra usa-se um função anônima:',
+  '\nFunction expression - tratar e armazenar a função dentro de uma constante, via de regra usa-se um função anônima:',
 );
 const boaTarde = function () {
   console.log('Boa tarde!');
@@ -32,7 +35,7 @@ resultado = somar(3, 4, 5, 6, 7, 8);
 console.log(resultado);
 
 console.log(
-  '\nPara resolver os dois os problemas abaixo, é só inicializar os parâmetros com valor default: a = 0, b = 0 ',
+  '\nPARÂMETRO PADRDÃO - Para resolver os dois os problemas abaixo, é só inicializar os parâmetros com valor default: a = 0, b = 0 ',
 );
 
 console.log(

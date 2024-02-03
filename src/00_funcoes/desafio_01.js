@@ -7,10 +7,14 @@ function somar(a) {
   };
 }
 
+console.log('1) Forma de invocar a função somar()');
 const somarAB = somar(3)(4);
 console.log(somarAB(13));
-console.log(somar(13)(20)(30));
 
+console.log('\n2) Forma de invocar a função somar()');
+console.log(somar(3)(4)(13));
+
+console.log('\n3) Terceiro exemplo: ');
 // fn -> 3 * 7
 // fn -> 3 + 7
 // fn -> 3 - 7

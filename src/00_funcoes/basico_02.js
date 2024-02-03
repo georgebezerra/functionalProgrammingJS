@@ -1,14 +1,17 @@
 console.log('**RELEMBRE**');
 console.log(
-  'Dois sinal de igualdade - igualdade ampla == comparação de valores',
+  'i. Dois sinal de igualdade - igualdade ampla == comparação de valores',
 );
 console.log(
-  'Três sinais de igualdade - identidade - igualdade estrita === comparação  de valores e de type\n',
+  'ii. Três sinais de igualdade - identidade - igualdade estrita === comparação  de valores e de type\n',
 );
+
+console.log('A - Function declaration - bomDia()');
 function bomDia() {
   console.log('Bom dia!');
 }
 
+console.log('B - Function expression - boaTarde()\n');
 const boaTarde = function () {
   console.log('Boa tarde!');
 };
@@ -26,7 +29,7 @@ executarQualquerCoisa(boaTarde);
 
 console.log('\n2) Retornar uma função a partir de uma outra função.');
 console.log(
-  'Exemplo 01 - Function expression que retorna um valor direto - calculo da potência',
+  'Exemplo 01 - Function declaration que retorna o método Math.pow um valor direto - calculo da potência',
 );
 function potencia01(base, exp) {
   return Math.pow(base, exp);
@@ -36,7 +39,7 @@ const bits8 = potencia01(2, 8);
 console.log(bits8);
 
 console.log(
-  '\nExemplo 02 - Função que retorna uma outra função e é essa que retorna o resultado - calculo da potência.',
+  '\nExemplo 02 - Function declaration que retorna uma Function expression e que retorna o método Math.pow com o resultado - calculo da potência.',
 );
 function potencia02(base) {
   return function (exp) {
@@ -47,5 +50,5 @@ function potencia02(base) {
 const potenciaDe2 = potencia02(2);
 console.log(potenciaDe2(8));
 
-const pot34 = potencia02(3)(4);
+const pot34 = potencia02(2)(8);
 console.log(pot34);
