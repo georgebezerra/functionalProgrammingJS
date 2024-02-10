@@ -1,18 +1,21 @@
 console.log('****ARROW FUNCTION****\n');
 console.log(
-  '1-Arrow function é uma função anônima que quando NÃO SE TEM {} não tem return explicito',
+  '1-Arrow function é uma função anônima que quando NÃO SE TEM {}, função sem corpo, a função é só uma expressão,' +
+    ' o return é implícito.',
 );
 const cumprimento = () => console.log('Boa Noite!');
 cumprimento();
 
 console.log(
-  '\n2 - Arrow function que recebe um parâmetro. E quando se tem um único parãmetro pode remover a parentese',
+  '\n2 - Arrow function que recebe um parâmetro. E quando se tem um único parãmetro pode remover os parênteses',
 );
 const saudacao = nome => 'Fala ' + nome + '!!!';
+const saudacao02 = nome => `Fala ${nome} !!!`;
 console.log(saudacao('Maria'));
+console.log(saudacao02('Maria'));
 
 console.log(
-  '\n3 - Arrow function com corpo. Que quando SE TEM {} o return é explicito',
+  '\n3 - Arrow function com corpo. Que quando SE TEM {}, funçao com corpo, o return é explicito',
 );
 const somar = numeros => {
   let total = 0;
@@ -24,7 +27,8 @@ const somar = numeros => {
 console.log(somar([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 console.log(
-  '\n4 - Parâmetros variaveis - rest ... pega todos os parâmetros e joga pra dentro de um array. Permiti passar quantos parâmetros desejaveis de uma forma flexivel',
+  '\n4 - Parâmetros variaveis - rest ... pega todos os parâmetros e joga pra dentro de um array. ' +
+    'Permiti passar quantos parâmetros desejaveis de uma forma flexivel',
 );
 const adicao = (...numeros) => {
   console.log(Array.isArray(numeros));
@@ -39,7 +43,7 @@ console.log(adicao(1, 2, 3, 4, 5, 6));
 console.log(adicao(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 
 console.log('\n5 - Uma função dentro de outra função usando arrow function');
-console.log('5.1 - Função comum');
+console.log('5.1 - Função declaration');
 function potencia(base) {
   return function (exp) {
     return Math.pow(base, exp);

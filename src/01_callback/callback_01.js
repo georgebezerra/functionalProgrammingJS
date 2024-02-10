@@ -1,7 +1,8 @@
 console.log(
   'CallBack - passar uma função como parâmetro de outra função e depois esta função será chamada de volta.\n' +
-    '\nOs exemplos abaixo fazem parte do conceito da programação reativa. Quando acontece um evento, chama uma função de volta: ',
-  '\nEx-01.: Passar uma função como parâmetro, pra outra função que vai lê o conteúdo de um arquivo e este conteúdo de arquivo demora um pouco' +
+    '\nOs exemplos abaixo fazem parte do conceito da programação reativa. ' +
+    'Quando acontece um evento, chama uma função de volta: \n',
+  '\nEx-01.: Passar uma função como parâmetro, pra outra função que vai lê o conteúdo de um arquivo e este conteúdo de arquivo demora um pouco ' +
     'pra ser lido, e aí, quando consegue ser lido, chama a função de volta com o conteúdo do arquivo.\n' +
     '' +
     '\nEx-02.: Faz uma requisição pro servidor, depois de um tempo, quando chegar a resposta, a callback é chamada.\n',
