@@ -19,9 +19,7 @@ const boaTarde = function () {
 };
 boaTarde();
 
-console.log(
-  '\nFunção comum - FLEXIBILIDADE AO PASSAR PARÂMETROS - Function declaration:',
-);
+console.log('\nFunção Declaration - FLEXIBILIDADE AO PASSAR PARÂMETROS:');
 function somar(a, b) {
   return a + b;
 }
