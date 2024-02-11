@@ -1,15 +1,18 @@
 console.log(
   'A função MAP é aplicada em um array de elementos e usa a técnica de passar um função como parâmetro de outra função. ',
 );
-console.log('Objetivo do MAP é tranformar os dados de array em outro array.\n');
-console.log('O MAP tem 3 parâmetros flexiveis: value, index e array.\n');
+console.log('\nObjetivo do MAP é tranformar os dados de array em outro array.');
+console.log(
+  'O MAP tem 3 parâmetros flexiveis: value, index e array, sendo o value obrigatório.\n',
+);
 
 console.log(
   'Exemplo-01: Crie um map que o resultado seja o dobro dos elementos numéricos.',
 );
 const nums = [1, 2, 3, 4, 5];
-const dobrovalue = v => v * 2;
+
 console.log('Passando apenas o parâmetro value:');
+const dobrovalue = v => v * 2;
 const mapdobrovalue = nums.map(dobrovalue);
 console.log(nums, mapdobrovalue);
 
