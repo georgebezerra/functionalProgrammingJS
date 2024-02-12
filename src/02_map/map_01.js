@@ -11,18 +11,26 @@ console.log(
 );
 const nums = [1, 2, 3, 4, 5];
 
-console.log('Passando apenas o parâmetro value:');
+console.log('i. Passando apenas o parâmetro value:');
 const dobrovalue = v => v * 2;
 const mapdobrovalue = nums.map(dobrovalue);
-console.log(nums, mapdobrovalue);
+
+console.log('\nii. Passando apenas o parâmetro value:');
+const valuemapdobro = nums.map(v => v * 2);
+
+console.log(nums, mapdobrovalue, valuemapdobro);
 
 console.log(
   '\nExemplo-02: Crie um map que o resultado seja o dobro dos elementos numéricos + indice.',
 );
-console.log('Passando os parâmetros value e index');
+console.log('\ni.Passando os parâmetros value e index');
 const dobrovalueindex = (v, i) => v * 2 + i;
 const mapdobrovalueindex = nums.map(dobrovalueindex);
-console.log(nums, mapdobrovalueindex);
+
+console.log('\nii.Passando os parâmetros value e index');
+const indexvaluedobromap = nums.map((v, i) => v * 2 + i);
+
+console.log(nums, mapdobrovalueindex, indexvaluedobromap);
 
 console.log(
   '\nExemplo-03: Crie um map que o resultado seja o dobro dos elementos numéricos + indice + array.',
@@ -37,6 +45,8 @@ console.log(
 const nomes = ['Ana', 'Bia', 'Gui', 'Lia', 'Rafa'];
 const primeiraLetra = nome => nome[0];
 const letras = nomes.map(primeiraLetra);
-console.log(nomes, letras);
+const letras02 = nomes.map(nome => nome[0]);
+
+console.log(nomes, letras, letras02);
 
 console.log('FIM');
