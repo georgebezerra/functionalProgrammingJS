@@ -1,5 +1,5 @@
 console.log(
-  'Promise - é um evento que será executado no futuro e será devolvido no futuro.',
+  'Promise - é um evento que será executado no futuro e será devolvido no futuro. E aceita um único parâmetro.',
 );
 
 let a = 1;
@@ -14,7 +14,7 @@ let p = new Promise(function (cumprirPromessa) {
 });
 console.log(typeof p);
 
-console.log('\nmétodo then mostra o resultado de uma promise: ');
+console.log('\nmétodo then (então) mostra o resultado de uma promise: ');
 p.then(function (valor) {
   console.log(valor);
 });
@@ -27,7 +27,7 @@ p.then(function (valor, x) {
 });
 
 console.log(
-  '\no exemplo abaixo funcioa pois pode-se criar objetos para se trabalhar com mais de um valor: ',
+  '\nO exemplo abaixo funcioa pois pode-se criar objetos para se trabalhar com mais de um valor, com mais de um parâmetro: ',
 );
 let x = new Promise(function (cumprirPromessa) {
   cumprirPromessa({
@@ -54,7 +54,7 @@ let y = new Promise(function (cumprirPromessa) {
 y.then(valor => console.log(valor));
 
 console.log(
-  '\no Encadeamenteo de then pra tratativas de valores. O then posterior é resultado do anterior e é possível tratar este resultado.' +
+  '\no Encadeamenteo de then (então) pra tratativas de valores. O then posterior é resultado do anterior e é possível tratar este resultado.' +
     'O resultado de um método then é passado para o próximo método then.',
 );
 let z = new Promise(function (resolve) {
